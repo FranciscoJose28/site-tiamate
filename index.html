@@ -1,124 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiamate - Início</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    />
     <style>
-        *{
-            font-family: "Archivo", sans-serif;
-        }
+      * {
+        font-family: "Archivo", sans-serif;
+      }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'vinho': '#64221D',
-                        'mostarda': '#F7AE1A',
-                        'creme': '#F5E7DA',
-                        'caramelo': '#CF9A5A',
-                        'bege': '#A97744',
-                        'canela': '#C7794A',
-                        'marrom': '#3B2416',
-                        'cafe': '#292625',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              vinho: "#64221D",
+              mostarda: "#F7AE1A",
+              creme: "#F5E7DA",
+              caramelo: "#CF9A5A",
+              bege: "#A97744",
+              canela: "#C7794A",
+              marrom: "#3B2416",
+              cafe: "#292625",
+            },
+          },
+        },
+      };
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header class="bg-cafe flex justify-between px-[135px] py-7">
-        <div class="flex gap-[55px] items-center">
-            <img src="images/logo.png" alt="Logo tiamate">
-            <nav class="flex gap-[45px]">
-                <a class="text-creme hover:text-mostarda duration-200" href="index.html">Início</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Nosso Café</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Notícias</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Contato</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Cardápio</a>
-            </nav>
-        </div>
-        <div>
-            <a class="text-marrom bg-canela w-[220px] leading-[52px] inline-block rounded-md text-center font-semibold hover:bg-creme hover:text-vinho duration-200" href="">Seja um franqueado</a>
-        </div>
+      <div class="flex gap-[55px] items-center">
+        <img src="images/logo.png" alt="Logo tiamate" />
+        <nav class="flex gap-[45px]">
+          <a
+            class="text-creme hover:text-mostarda duration-200"
+            href="index.html"
+            >Início</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Nosso Café</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Notícias</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Contato</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Cardápio</a
+          >
+        </nav>
+      </div>
+      <div>
+        <a
+          class="text-marrom bg-canela w-[220px] leading-[52px] inline-block rounded-md text-center font-semibold hover:bg-creme hover:text-vinho duration-200"
+          href=""
+          >Seja um franqueado</a
+        >
+      </div>
     </header>
     <main>
-        <section id="banner" class="relative">
-            <img src="images/banner-inicio.png" alt="" class="w-full block">
-            <div class="absolute left-[135px] top-1/2 -translate-y-1/2">
-                <div class="text-white text-[40px] font-bold leading-[45px]">
-                    <div class="text-mostarda">Um café quentinho</div> aqui na Tiamate <br> muda o dia.
-                </div>
-                <div class="flex gap-[30px] mt-[16px]">
-                    <a  href=""><box-icon class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200" type='logo' name='facebook'></box-icon></a>
-                    <a  href=""><box-icon class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200" type='logo' name='instagram'></box-icon></a>
-                    <a  href=""><box-icon class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200" type='logo' name='youtube'></box-icon></a>
-                    <a  href=""><box-icon class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200" type='logo' name='linkedin'></box-icon></a>
-                </div>
+      <section id="banner" class="relative">
+        <img src="images/banner-inicio.png" alt="" class="w-full block" />
+        <div class="absolute left-[135px] top-1/2 -translate-y-1/2">
+          <div class="text-white text-[40px] font-bold leading-[45px]">
+            <div class="text-mostarda">Um café quentinho</div>
+            aqui na Tiamate <br />
+            muda o dia.
+          </div>
+          <div class="flex gap-[30px] mt-[16px]">
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="facebook"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="instagram"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="youtube"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="linkedin"
+              ></box-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="sobre" class="flex bg-creme items-center">
+        <img src="images/milkshakes.png" alt="" />
+        <div class="pr-[135px]">
+          <h6 class="text-[18px] mb-[10px] text-marrom">
+            Para os amantes de café
+          </h6>
+          <h2 class="text-[50px] text-bege mb-[30px] font-bold leading-[55px]">
+            Bem-vindo a <br />Tiamate Coffee
+          </h2>
+          <p class="mb-4 text-marrom">
+            A Tiamate Coffee traduz de maneira clara e objetiva o verdadeiro
+            sabor do café e o seu espírito inovador. Visamos fazer parte da vida
+            das pessoas e diferentes culturas, isso é o que nos motiva a
+            oferecer o café mais gostoso. Por isso, selecionamos as melhores
+            plantações, os grãos, os blends e as pessoas que vão colocar a mão
+            na massa para fazer esse delicioso café.
+          </p>
+          <p class="text-marrom">
+            Pensamos em fazer os seus momentos mais felizes, seja no café da
+            manhã ou em uma reunião. Individualmente ou entre amigos. À Tiamate
+            Coffee investe em um conceito atual que transmite as pessoas uma
+            sensação de bem estar. Enquanto nosso café aproxima as pessoas,
+            nossos serviços de Wifi gratuito as mantém conectadas. Descubra como
+            navegar na internet enquanto você saboreia um Tiamate.
+          </p>
+        </div>
+      </section>
+      <section id="valores" class="px-[135px] pt-[160px] pb-[135px]">
+        <div class="flex gap-[168px] mb-[140px]">
+          <div class="flex-1">
+            <div class="flex items-center gap-4 mb-[20px]">
+              <img src="images/icon-missao.png" alt="" />
+              <h5 class="text-[24px] text-bege font-bold">Missão</h5>
             </div>
-            
-        </section>
-        <section id="sobre">
+            <p class="text-marrom text-base">
+              Fornecer soluções, produtos e serviços de maneira clara e objetiva
+              construindo relacionamentos duradouros com a comunidade,
+              parceiros, colaboradores e sócios, através da criação de valores.
+            </p>
+          </div>
 
-        </section>
-        <section id="valores">
+          <div class="flex-1">
+            <div class="flex items-center gap-4 mb-[20px]">
+              <img src="images/icon-visao.png" alt="" />
+              <h5 class="text-[24px] text-bege font-bold">Visão</h5>
+            </div>
+            <p class="text-marrom text-base">
+              Ser referência em inovação e estimular exponencialmente a nossa
+              gestão de maneira diversificada, próspera e justa. Com devoção e
+              disciplina em todas as nossas operações de negócio.
+            </p>
+          </div>
 
-        </section>
-        <section id="subbanner">
-
-        </section>
-        <section id="instagram">
-
-        </section>
-        <section id="cardapio">
-
-        </section>
-        <section id="franquia">
-
-        </section>
-        <section id="depoimentos">
-
-        </section>
+          <div class="flex-1">
+            <div class="flex items-center gap-4 mb-[20px]">
+              <img src="images/icon-valores.png" alt="" />
+              <h5 class="text-[24px] text-bege font-bold">Valores</h5>
+            </div>
+            <p class="text-marrom text-base">
+              Amor ao Trabalho - Organização - Disciplina - Inovação - Busca
+              Contínua Pela Qualidade - Foco no Cliente
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-[50px] text-bege mb-[80px] font-bold leading-[55px]">
+            Coisas boas acontecem àqueles <br />
+            que gostam de café
+          </h2>
+          <div class="relative">
+            <img src="images/vio-thumb.png" alt="" class="w-full">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer group">
+                <img src="images/icon-play.png" alt="" class="group-hover:scale-105 duration-200">
+                <h6 class="text-[18px] text-creme mt-[22px] text-center">Assistir vídeo</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="subbanner" class="relative">
+        <img src="images/subbanner-inicio.png" alt="" class="w-full block" />
+        <div class="absolute left-[135px] top-1/2 -translate-y-1/2">
+          <div class="text-white text-[40px] leading-[45px]">
+            <div class="text-canela font-bold">Café Autêntico</div>
+            Chegou nosso café! <br> Direto da fazenda.
+          </div>
+        </div>
+        
+      </section>
+      <section id="instagram" class="px-[135px] pt-[170px]">
+        <div class="flex justify-between items-center mb-[70px]">
+            <div>
+                <h6 class="text-[18px] text-marrom mb-3">Para você e seus amigos</h6>
+                <h2 class="text-[50px] text-bege font-bold leading-[55px]">Ambiente agradável</h2>
+            </div>
+            <div class="flex gap-[10px] items-center">
+                <h6>Veja mais</h6>
+                <img src="images/icon-instagram.svg" alt="">
+            </div>
+        </div>
+        <div class="grid grid-cols-3 *:w-full">
+            <img src="images/instagram1.png" alt="">
+            <img src="images/instagram2.png" alt="">
+            <img src="images/instagram3.png" alt="">
+            <img src="images/instagram4.png" alt="">
+            <img src="images/instagram5.png" alt="">
+            <img src="images/instagram6.png" alt="">
+        </div>
+      </section>
+      <section id="cardapio"></section>
+      <section id="franquia"></section>
+      <section id="depoimentos"></section>
     </main>
-    <footer class="bg-cafe px-[135px] py-[74px]" >
-        <div class="flex justify-between border-b border-bege pb-[50px]">
-            <img src="images/logo.png" alt="Logo tiamate">
-            <nav class="flex gap-[45px]">
-                <a class="text-creme hover:text-mostarda duration-200" href="index.html">Início</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Nosso Café</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Notícias</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Contato</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Cardápio</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Franquia</a>
-            </nav>
+    <footer class="bg-cafe px-[135px] py-[74px]">
+      <div class="flex justify-between border-b border-bege pb-[50px]">
+        <img src="images/logo.png" alt="Logo tiamate" />
+        <nav class="flex gap-[45px]">
+          <a
+            class="text-creme hover:text-mostarda duration-200"
+            href="index.html"
+            >Início</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Nosso Café</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Notícias</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Contato</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Cardápio</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Franquia</a
+          >
+        </nav>
+      </div>
+      <div class="flex justify-between mt-[38px]">
+        <div class="flex items-center gap-[34px]">
+          <h6 class="text-creme">Curta e <br />Compartilhe</h6>
+          <div class="flex gap-[23px]">
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="facebook"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="instagram"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="youtube"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="linkedin"
+              ></box-icon
+            ></a>
+          </div>
         </div>
-        <div class="flex justify-between mt-[38px]">
-            <div class="flex items-center gap-[34px]">
-                <h6 class="text-creme">Curta e <br>Compartilhe</h6>
-                <div class="flex gap-[23px]">
-                    <a  href=""><box-icon class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200" type='logo' name='facebook'></box-icon></a>
-                    <a  href=""><box-icon class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200" type='logo' name='instagram'></box-icon></a>
-                    <a  href=""><box-icon class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200" type='logo' name='youtube'></box-icon></a>
-                    <a  href=""><box-icon class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200" type='logo' name='linkedin'></box-icon></a>
-                </div>
-            </div>
-            <div class="flex items-center gap-[31px] ">
-                <h6 class="text-bege text-[10px]">© 2021 Tiamate - Todos os Direitos Reservados</h6>
-                <img src="images/logo-grupo-gracom.png" alt="">
-            </div>
+        <div class="flex items-center gap-[31px]">
+          <h6 class="text-bege text-[10px]">
+            © 2021 Tiamate - Todos os Direitos Reservados
+          </h6>
+          <img src="images/logo-grupo-gracom.png" alt="" />
         </div>
+      </div>
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-</body>
-
+  </body>
 </html>
