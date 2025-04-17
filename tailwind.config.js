@@ -12,6 +12,7 @@ export default {
                 'canela': '#C7794A',
                 'marrom': '#3B2416',
                 'cafe': '#292625',
+                'cinza': "#E7E1DF"
             }
         },
     },
