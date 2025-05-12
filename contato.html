@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiamate - Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <style>
+      * {
+        font-family: "Archivo", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              vinho: "#64221D",
+              mostarda: "#F7AE1A",
+              creme: "#F5E7DA",
+              caramelo: "#CF9A5A",
+              bege: "#A97744",
+              canela: "#C7794A",
+              marrom: "#3B2416",
+              cafe: "#292625",
+              cinza: "#E7E1DF",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <header class="bg-cafe flex justify-between px-4 xl:px-[135px] py-7">
+      <div class="flex gap-[55px] items-center">
+        <div class="flex gap-4 items-center lg:hidden">
+          <box-icon
+            name="menu"
+            class="fill-mostarda h-[30px] w-[30px]"
+          ></box-icon>
+          <img src="images/icon-logo.png" alt="Logo tiamate" class="h-[50px]" />
+        </div>
+        <img src="images/logo.png" alt="Logo tiamate" class="hidden lg:block" />
+        <nav class="hidden lg:flex lg:gap-[25px] xl:gap-[45px]">
+          <a
+            class="text-creme hover:text-mostarda duration-200"
+            href="index.html"
+            >Início</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Nosso Café</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Notícias</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Contato</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Cardápio</a
+          >
+        </nav>
+      </div>
+      <div>
+        <a
+          class="text-marrom bg-canela w-[180px] lg:w-[220px] leading-[52px] inline-block rounded-md text-center font-semibold hover:bg-creme hover:text-vinho duration-200"
+          href=""
+          >Seja um franqueado</a
+        >
+      </div>
+    </header>
+    <main>
+      <section id="banner-contato" class="relative">
+        <img
+          src="images/banner-contato.png"
+          alt=""
+          class="w-full block h-[450px] lg:h-auto object-cover bg-center"
+        />
+        <div
+          class="absolute left-0 lg:left-[60px] xl:left-[135px] w-full lg:w-auto top-1/2 -translate-y-1/2"
+        >
+          <div
+            class="text-white text-[36px] text-center lg:text-left xl:text-[40px] font-bold leading-[45px]"
+          >
+            <div>
+              Depois do café <br />
+              eu me expresso.
+            </div>
+          </div>
+          <div
+            class="flex gap-[30px] mt-[16px] justify-center lg:justify-start"
+          >
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="facebook"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="instagram"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="youtube"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="linkedin"
+              ></box-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="cafeterias" class="p-4 lg:p-[60px] xl:px-[135px]">
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between items-center mb-8 lg:mb-[70px]"
+        >
+          <div class="text-center lg:text-left">
+            <h2
+              class="text-[30px] lg:text-[50px] text-bege font-bold lg:leading-[55px]"
+            >
+              Nossas Cafeterias
+            </h2>
+          </div>
+          <div
+            class="flex flex-col-reverse lg:flex-row mt-8 gap-[10px] items-center"
+          >
+            <h6>Veja mais</h6>
+            <img src="images/icon-instagram.svg" alt="" />
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+            <div class="w-[814px] flex justify-between *:w-[150px]">
+                <img src="images/galeria1.png" alt="" class="">
+                <img src="images/galeria2.png" alt="" class="">
+                <img src="images/galeria3.png" alt="" class="">
+                <img src="images/galeria4.png" alt="" class="">
+                <img src="images/galeria5.png" alt="" class="">
+            </div>
+        </div>
+      </section>
+      <section id="endereco" class="p-4 lg:p-[60px] xl:px-[135px]">
+        <h6 class="text-marrom text-center mt-10 mb-[6px] text-[18px]">
+          Endereço
+        </h6>
+        <h2
+          class="text-bege text-center font-bold leading-[40px] xl:leading-[54px] text-[36px] xl:text-[50px] mb-[40px]"
+        >
+          Vem tomar um café
+        </h2>
+        <div
+          class="text-center grid md:grid-cols-2 lg:grid-cols-3 lg:text-left lg:gap-[60px] xl:gap-[180px]"
+        >
+          <div class="flex-1 items-center justify-center mb-8">
+            <img src="images/icon-coffee.png" alt="" class="m-auto lg:m-0" />
+            <p class="text-caramelo font-bold">Unidade</p>
+            <h2 class="text-lg font-bold text-marrom">Salvador Centro - BA</h2>
+            <div class="h-[1px] bg-cinza my-[29px]"></div>
+            <div class="flex justify-center gap-3 mb-3 lg:justify-start">
+              <box-icon
+                type="solid"
+                name="map"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege block font-bold"
+                  >Endereço:</strong
+                >Shopping Iguatemi Fortaleza<br />(loja 68)
+                <strong class="text-bege">Cep:</strong> 70770-560
+              </p>
+            </div>
+            <div class="flex justify-center gap-3 mb-3 lg:justify-start">
+              <box-icon
+                name="time"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege block font-bold"
+                  >Horário de Funcionamento:</strong
+                >
+                Seg a Sex - 8h:00 às 18h:00<br />
+                Sáb - 08h:00 às 17h:00
+              </p>
+            </div>
+            <div class="flex justify-center gap-3 lg:justify-start">
+              <box-icon
+                name="whatsapp"
+                type="logo"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege font-bold">Contato:</strong
+                >(85) 99691 - 7642
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="flex-1 items-center justify-center mb-8">
+            <img src="images/icon-coffee.png" alt="" class="m-auto lg:m-0" />
+            <p class="text-caramelo font-bold">Unidade</p>
+            <h2 class="text-lg font-bold text-marrom">Salvador Centro - BA</h2>
+            <div class="h-[1px] bg-cinza my-[29px]"></div>
+            <div class="flex justify-center gap-3 mb-3 lg:justify-start">
+              <box-icon
+                type="solid"
+                name="map"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege block font-bold"
+                  >Endereço:</strong
+                >Shopping Iguatemi Fortaleza<br />(loja 68)
+                <strong class="text-bege">Cep:</strong> 70770-560
+              </p>
+            </div>
+            <div class="flex justify-center gap-3 mb-3 lg:justify-start">
+              <box-icon
+                name="time"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege block font-bold"
+                  >Horário de Funcionamento:</strong
+                >
+                Seg a Sex - 8h:00 às 18h:00<br />
+                Sáb - 08h:00 às 17h:00
+              </p>
+            </div>
+            <div class="flex justify-center gap-3 lg:justify-start">
+              <box-icon
+                name="whatsapp"
+                type="logo"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege font-bold">Contato:</strong
+                >(85) 99691 - 7642
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="flex-1 items-center justify-center mb-8">
+            <img src="images/icon-coffee.png" alt="" class="m-auto lg:m-0" />
+            <p class="text-caramelo font-bold">Unidade</p>
+            <h2 class="text-lg font-bold text-marrom">Salvador Centro - BA</h2>
+            <div class="h-[1px] bg-cinza my-[29px]"></div>
+            <div class="flex justify-center gap-3 mb-3 lg:justify-start">
+              <box-icon
+                type="solid"
+                name="map"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege block font-bold"
+                  >Endereço:</strong
+                >Shopping Iguatemi Fortaleza<br />(loja 68)
+                <strong class="text-bege">Cep:</strong> 70770-560
+              </p>
+            </div>
+            <div class="flex justify-center gap-3 mb-3 lg:justify-start">
+              <box-icon
+                name="time"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege block font-bold"
+                  >Horário de Funcionamento:</strong
+                >
+                Seg a Sex - 8h:00 às 18h:00<br />
+                Sáb - 08h:00 às 17h:00
+              </p>
+            </div>
+            <div class="flex justify-center gap-3 lg:justify-start">
+              <box-icon
+                name="whatsapp"
+                type="logo"
+                class="hidden lg:block fill-bege"
+              ></box-icon>
+              <p class="text-sm text-marrom">
+                <strong class="text-sm text-bege font-bold">Contato:</strong
+                >(85) 99691 - 7642
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-cafe px-4 md:px-[60px] xl:px-[135px] py-[74px]">
+      <div
+        class="flex flex-col md:flex-row items-center md:justify-between gap-[40px] border-b border-bege pb-[50px]"
+      >
+        <img src="images/logo.png" alt="Logo tiamate" />
+        <nav
+          class="flex flex-col md:flex-row items-center gap-2 md:gap-4 lg:gap-[45px]"
+        >
+          <a
+            class="text-creme hover:text-mostarda duration-200"
+            href="index.html"
+            >Início</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Nosso Café</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Notícias</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Contato</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Cardápio</a
+          >
+          <a class="text-creme hover:text-mostarda duration-200" href=""
+            >Franquia</a
+          >
+        </nav>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-[40px] justify-between mt-[38px]"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-center md:items-start lg:items-center gap-[34px]"
+        >
+          <h6 class="text-creme text-center md:text-left">
+            Curta e <br />Compartilhe
+          </h6>
+          <div class="flex gap-[23px]">
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="facebook"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="instagram"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="youtube"
+              ></box-icon
+            ></a>
+            <a href=""
+              ><box-icon
+                class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                type="logo"
+                name="linkedin"
+              ></box-icon
+            ></a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center md:items-end lg:items-center gap-[31px]"
+        >
+          <h6 class="text-bege text-[10px]">
+            © 2021 Tiamate - Todos os Direitos Reservados
+          </h6>
+          <img src="images/logo-grupo-gracom.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
