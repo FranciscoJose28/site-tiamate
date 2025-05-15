@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiamate - Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" />
+    <style>
+        * {
+            font-family: "Archivo", sans-serif;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vinho: "#64221D",
+                        mostarda: "#F7AE1A",
+                        creme: "#F5E7DA",
+                        caramelo: "#CF9A5A",
+                        bege: "#A97744",
+                        canela: "#C7794A",
+                        marrom: "#3B2416",
+                        cafe: "#292625",
+                        cinza: "#E7E1DF"
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <header class="bg-cafe flex justify-between px-4 xl:px-[135px] py-7">
+        <div class="flex gap-[55px] items-center">
+            <div class="flex gap-4 items-center lg:hidden">
+                <box-icon name='menu' class="fill-mostarda h-[30px] w-[30px]"></box-icon>
+                <img src="images/icon-logo.png" alt="Logo tiamate" class="h-[50px]" />
+            </div>
+            <img src="images/logo.png" alt="Logo tiamate" class="hidden lg:block" />
+            <nav class="hidden lg:flex lg:gap-[25px] xl:gap-[45px]">
+                <a class="text-creme hover:text-mostarda duration-200" href="index.html">Início</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Nosso Café</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Notícias</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Contato</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Cardápio</a>
+            </nav>
+        </div>
+        <div>
+            <a class="text-marrom bg-canela w-[180px] lg:w-[220px] leading-[52px] inline-block rounded-md text-center font-semibold hover:bg-creme hover:text-vinho duration-200"
+                href="">Seja um franqueado</a>
+        </div>
+    </header>
+    <main>
+        <section id="banner-nossocafe" class="relative">
+        <img src="images/banner-cardapio.png" alt="" class="w-full block h-[450px] lg:h-auto object-cover bg-center" />
+        <div class="absolute left-0 lg:left-[60px] xl:left-[135px] w-full lg:w-auto top-1/2 -translate-y-1/2">
+                <div class="text-white text-[36px] text-center lg:text-left xl:text-[40px] font-bold leading-[45px]">
+                    <div>O verdadeiro <br> sabor do Café.
+                    </div>
+                </div>
+                <div class="flex gap-[30px] mt-[16px] justify-center lg:justify-start">
+                    <a href=""><box-icon
+                            class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                            type="logo" name="facebook"></box-icon></a>
+                    <a href=""><box-icon
+                            class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                            type="logo" name="instagram"></box-icon></a>
+                    <a href=""><box-icon
+                            class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                            type="logo" name="youtube"></box-icon></a>
+                    <a href=""><box-icon
+                            class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                            type="logo" name="linkedin"></box-icon></a>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="p-4 md:p-[60px] lg:flex lg:gap-[60px] lg:items-start xl:gap-[130px] xl:px-[135px]">
+            <div class="overflow-x-auto lg:w-[300px]">
+                <ul class="flex w-[800px] gap-[20px] lg:w-auto lg:flex-col lg:*:text-[18px] *:text-marrom">
+                    <li>Lançamentos</li>
+                    <li class="!text-canela border-b-2 border-b-canela leading-[30px] px-3 lg:!text-[24px] lg:font-bold lg:leading-[40px]">Expressos</li>
+                    <li>Tiamatino Coffee</li>
+                    <li>Tiamatino Cream</li>
+                    <li>Bebidas Italianas</li>
+                    <li>Cappuccino</li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 text-center text-marrom">
+                <div class="grid items-center justify-between">
+                    <img src="images/expresso1.png" alt="">
+                    <h6>Tradicional</h6>
+                </div>
+                <div class="grid items-center justify-between">
+                    <img src="images/expresso2.png" alt="">
+                    <h6>Americano</h6>
+                </div>
+                <div class="grid items-center justify-between">
+                    <img src="images/expresso3.png" alt="">
+                    <h6>Macchiato</h6>
+                </div>
+                <div class="grid items-center justify-between">
+                    <img src="images/expresso4.png" alt="">
+                    <h6>Chantilly</h6>
+                </div>
+                <div class="grid items-center justify-between">
+                    <img src="images/expresso5.png" alt="">
+                    <h6>Latte</h6>
+                </div>
+            </div>
+        </section>
+        <section id="franquia" class="bg-marrom flex flex-col-reverse lg:flex-row">
+            <div class="flex-1 p-4 xl:pl-[135px] xl:pr-[70px] flex justify-center flex-col md:mb-4 md:px-[60px] md:ml-2 xl:px-[135px]">
+                <h6 class="text-caramelo mb-[6px] text-[18px] md:justify-center">Entre em contato</h6>
+
+                <h2 class="text-creme font-bold w-[440px] leading-[54px] text-[36px] xl:text-[50px] mb-[19px]">
+                    Abra sua Franquia
+                </h2>
+
+                <h6 class="text-caramelo mb-[19px] text-[16px]">
+                    Preencha o formulário abaixo que entraremos em contato <br> com você o
+                    mais rápido possível.
+                </h6>
+
+                <form action="">
+                    <div class="flex w-full bg-creme rounded-md h-[60px] gap-[10px] items-center pl-[10px] mb-[10px]">
+                        <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
+                            <img src="images/icon-user.png" alt="" />
+                        </div>
+                        <input type="text" placeholder="Nome e Sobrenome"
+                            class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none" />
+                    </div>
+
+                    <div class="flex w-full bg-creme rounded-md h-[60px] gap-[10px] items-center pl-[10px] mb-[10px]">
+                        <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
+                            <img src="images/icon-email.png" alt="" />
+                        </div>
+                        <input type="email" placeholder="email@exemplo.com"
+                            class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none" />
+                    </div>
+
+                    <div class="flex w-full bg-creme rounded-md h-[60px] gap-[10px] items-center pl-[10px] mb-[10px]">
+                        <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
+                            <img src="images/icon-phone.png" alt="" />
+                        </div>
+                        <input type="text" placeholder="Telefone com DDD"
+                            class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none" />
+                    </div>
+                    
+                    <div class="flex gap-[10px]">
+                        <div
+                            class="flex w-full bg-creme rounded-md h-[60px] gap-[10px] items-center pl-[10px] mb-[10px]">
+                            <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
+                                <img src="images/icon-pin.png" alt="" />
+                            </div>
+                            <select class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
+                                <option>UF</option>
+                                <option>CE</option>
+                                <option>SP</option>
+                                <option>RJ</option>
+                                <option>MG</option>
+                            </select>
+                        </div>
+
+                        <div
+                            class="flex w-full bg-creme rounded-md h-[60px] gap-[10px] items-center pl-[10px] mb-[10px]">
+                            <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
+                                <img src="images/icon-home.png" alt="" />
+                            </div>
+                            <select class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
+                                <option>Cidade</option>
+                                <option>CE</option>
+                                <option>SP</option>
+                                <option>RJ</option>
+                                <option>MG</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full bg-creme rounded-md h-[60px] gap-[10px] items-center pl-[10px] mb-[10px]">
+                        <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
+                            <img src="images/icon-home.png" alt="" />
+                        </div>
+                        <select class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
+                            <option>Como conheceu a Tiamate?</option>
+                            <option>Redes Sociais</option>
+                            <option>Indicação</option>
+                            <option>Pesquisa Google</option>
+                        </select>
+                    </div>
+                    
+                    <button
+                        class="text-marrom bg-canela w-full leading-[60px] inline-block rounded-md text-center font-semibold hover:bg-creme hover:text-vinho duration-200">Enviar
+                        Cadastro</button>
+                </form>
+
+            </div>
+
+            <div class="flex-1">
+                <img src="images/bg-formulario.png" alt="" class="w-full h-full object-cover" />
+            </div>
+        </section>
+        <section id="depoimentos" class="py-8 xl:py-[130px] ">
+            <h6 class="text-marrom text-center mb-[6px] text-[18px]">Depoimentos</h6>
+
+            <h2 class="text-bege text-center font-bold leading-[40px] xl:leading-[54px] text-[36px] xl:text-[50px] mb-[40px]">
+                Tudo sobre Tiamate Coffee
+            </h2>
+
+            <div class="relative xl:overflow-hidden pb-[250px] lg:pb-[150px] xl:pb-0">
+                <img src="images/bg-depoimentos.png" alt="">
+                <div class="w-full overflow-x-auto xl:overflow-x-hidden lg:overflow-hidden absolute top-1/2 -translate-y-1/2 lg:right-0">
+                    <div class="w-[1280px] lg:w-auto flex gap-[40px] relative px-4 pt-[200px] md:pt-0 lg:-right-1/4">
+                        <div class="w-[400px] bg-cinza rounded-md pt-[40px] px-[35px] pb-[30px]">
+                            <div class="flex mb-[15px]">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                            </div>
+                            <p class="text-marrom mb-3">O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.</p>
+                            <div class="flex items-center gap-4">
+                                <img src="images/cliente.png" alt="">
+                                <h5 class="text-vinho font-semibold text-base">Kalil Sousa</h5>
+                            </div>
+                        </div>
+                        <div class="w-[400px] bg-cinza rounded-md pt-[40px] px-[35px] pb-[30px]">
+                            <div class="flex mb-[15px]">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                            </div>
+                            <p class="text-marrom mb-3">O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.</p>
+                            <div class="flex items-center gap-4">
+                                <img src="images/cliente.png" alt="">
+                                <h5 class="text-vinho font-semibold text-base">Kalil Sousa</h5>
+                            </div>
+                        </div>
+                        <div class="w-[400px] bg-cinza rounded-md pt-[40px] px-[35px] pb-[30px]">
+                            <div class="flex mb-[15px]">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                                <img src="images/icon-star.png" alt="">
+                            </div>
+                            <p class="text-marrom mb-3">O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.</p>
+                            <div class="flex items-center gap-4">
+                                <img src="images/cliente.png" alt="">
+                                <h5 class="text-vinho font-semibold text-base">Kalil Sousa</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-cafe px-4 md:px-[60px] xl:px-[135px] py-[74px]">
+        <div class="flex flex-col md:flex-row items-center md:justify-between gap-[40px] border-b border-bege pb-[50px]">
+            <img src="images/logo.png" alt="Logo tiamate" />
+            <nav class="flex flex-col md:flex-row items-center gap-2 md:gap-4 lg:gap-[45px]">
+                <a class="text-creme hover:text-mostarda duration-200" href="index.html">Início</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Nosso Café</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Notícias</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Contato</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Cardápio</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="">Franquia</a>
+            </nav>
+        </div>
+        <div class="flex flex-col md:flex-row gap-[40px] justify-between mt-[38px]">
+            <div class="flex flex-col lg:flex-row items-center md:items-start lg:items-center gap-[34px]">
+                <h6 class="text-creme text-center md:text-left">Curta e <br />Compartilhe</h6>
+                <div class="flex gap-[23px]">
+                    <a href=""><box-icon
+                            class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                            type="logo" name="facebook"></box-icon></a>
+                    <a href=""><box-icon
+                            class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                            type="logo" name="instagram"></box-icon></a>
+                    <a href=""><box-icon
+                            class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                            type="logo" name="youtube"></box-icon></a>
+                    <a href=""><box-icon
+                            class="w-[25px] h-[25px] bg-canela rounded-full inline-block p-1 fill-marrom hover:bg-creme hover:fill-vinho duration-200"
+                            type="logo" name="linkedin"></box-icon></a>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse lg:flex-row items-center md:items-end lg:items-center gap-[31px]">
+                <h6 class="text-bege text-[10px]">
+                    © 2021 Tiamate - Todos os Direitos Reservados
+                </h6>
+                <img src="images/logo-grupo-gracom.png" alt="" />
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
