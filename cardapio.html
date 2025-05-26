@@ -36,20 +36,25 @@
     </script>
 </head>
 
-<body>
-    <header class="bg-cafe flex justify-between px-4 xl:px-[135px] py-7">
+<body class="pt-[108px] lg:pt-0">
+    <header
+        class="fixed z-20 top-0 left-0 w-full lg:static lg:top-auto lg:left-auto bg-cafe flex justify-between px-4 xl:px-[135px] py-7">
         <div class="flex gap-[55px] items-center">
             <div class="flex gap-4 items-center lg:hidden">
-                <box-icon name='menu' class="fill-mostarda h-[30px] w-[30px]"></box-icon>
+                <box-icon id="menuBtn" name='menu' class="fill-mostarda h-[30px] w-[30px]"
+                    onclick="abreFechaMenu()"></box-icon>
+                <box-icon id="menuBtnFechar" name='x' class="hidden fill-mostarda h-[30px] w-[30px]"
+                    onclick="abreFechaMenu()"></box-icon>
                 <img src="images/icon-logo.png" alt="Logo tiamate" class="h-[50px]" />
             </div>
             <img src="images/logo.png" alt="Logo tiamate" class="hidden lg:block" />
-            <nav class="hidden lg:flex lg:gap-[25px] xl:gap-[45px]">
+            <nav id="menu"
+                class="w-[270px] lg:w-auto h-[calc(100vh_-_108px)] lg:h-auto bg-cafe fixed lg:static top-[108px] lg:top-auto -left-[270px] lg:left-auto z-10 flex flex-col lg:flex-row pl-4 duration-200 *:leading-[50px] lg:gap-[25px] xl:gap-[45px]">
                 <a class="text-creme hover:text-mostarda duration-200" href="index.html">Início</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Nosso Café</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Notícias</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Contato</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Cardápio</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="nossocafe.html">Nosso Café</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="franquia.html">Notícias</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="contato.html">Contato</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="cardapio.html">Cardápio</a>
             </nav>
         </div>
         <div>
@@ -119,7 +124,7 @@
             <div class="flex-1 p-4 xl:pl-[135px] xl:pr-[70px] flex justify-center flex-col md:mb-4 md:px-[60px] md:ml-2 xl:px-[135px]">
                 <h6 class="text-caramelo mb-[6px] text-[18px] md:justify-center">Entre em contato</h6>
 
-                <h2 class="text-creme font-bold w-[440px] leading-[54px] text-[36px] xl:text-[50px] mb-[19px]">
+                <h2 class="text-creme font-bold leading-[54px] text-[36px] xl:text-[50px] mb-[19px]">
                     Abra sua Franquia
                 </h2>
 
@@ -265,15 +270,16 @@
         </section>
     </main>
     <footer class="bg-cafe px-4 md:px-[60px] xl:px-[135px] py-[74px]">
-        <div class="flex flex-col md:flex-row items-center md:justify-between gap-[40px] border-b border-bege pb-[50px]">
+        <div
+            class="flex flex-col md:flex-row items-center md:justify-between gap-[40px] border-b border-bege pb-[50px]">
             <img src="images/logo.png" alt="Logo tiamate" />
             <nav class="flex flex-col md:flex-row items-center gap-2 md:gap-4 lg:gap-[45px]">
                 <a class="text-creme hover:text-mostarda duration-200" href="index.html">Início</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Nosso Café</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Notícias</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Contato</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Cardápio</a>
-                <a class="text-creme hover:text-mostarda duration-200" href="">Franquia</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="nossocafe.html">Nosso Café</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="franquia.html">Notícias</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="contato.html">Contato</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="cardapio.html">Cardápio</a>
+                <a class="text-creme hover:text-mostarda duration-200" href="franquia.html">Franquia</a>
             </nav>
         </div>
         <div class="flex flex-col md:flex-row gap-[40px] justify-between mt-[38px]">
@@ -303,6 +309,7 @@
         </div>
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
