@@ -26,29 +26,37 @@ function cafeteriaImg2(imgGrande){
     const imgMaior = document.querySelector('#imgMaior2');
     imgMaior.src = imgGrande;
 }
+
 let opcao = 1;
-function quemSomos(direcao){
+function quemSomos(direcao) {
     const icon = document.querySelector('#icon-quemsomos');
     const text = document.querySelector('#texto-quemsomos');
-    if(direcao == "proximo"){
+
+    if (direcao === "proximo") {
         opcao += 1;
+        if (opcao > 4) {
+            opcao = 1; 
+        }
     } else {
         opcao -= 1;
+        if (opcao < 1) {
+            opcao = 4;
+        }
     }
-    if(opcao == 1){
+
+    if (opcao === 1) {
         icon.src = "./images/icon-quemsomos1.png";
         text.innerText = "Universidade corporativa que auxilia na capacitação operacional e desenvolvimento de habilidades gerenciais";
-    } else if(opcao == 2){
+    } else if (opcao === 2) {
         icon.src = "./images/icon-quemsomos2.png";
         text.innerText = "Modelo inovador e produtos patenteados";
-    } else if(opcao == 3){
+    } else if (opcao === 3) {
         icon.src = "./images/icon-quemsomos3.png";
         text.innerText = "Ampla oferta de produtos, seja bebidas ou comidas";
-    } else{
+    } else if (opcao === 4) {
         icon.src = "./images/icon-quemsomos4.png";
         text.innerText = "Equipe de consultores altamente especializada";
     }
-    console.log(
-    opcao);
+    // console.log(opcao);
 }
 
