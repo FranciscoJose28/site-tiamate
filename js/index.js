@@ -60,3 +60,23 @@ function quemSomos(direcao) {
     // console.log(opcao);
 }
 
+function diferenciais(iconGrande){
+    const iconMaior = document.querySelector('#iconMaior');
+    const text = document.querySelector('#texto-diferenciais');
+    iconMaior.src = iconGrande;
+
+    if (opcao == 1) {
+        icon.src = "./images/diferencial1-grande.png";
+        text.innerText = "A tiamate possui faturamento bruto percentual de lucro de 12% a 18%";
+    } else if (opcao == 2) {
+        icon.src = "./images/diferencial2G.png";
+        text.innerText = "A Tiamate possui um departamento de logistica que avalia cada caso e analisa a entrega oferecendo soluções para que as unidades não fiquem sem produtos.";
+    } else if (opcao == 3) {
+        icon.src = "./images/diferencial3G.png";
+        text.innerText = "Possui um software de gestão integrada";
+    } else if (opcao == 4) {
+        icon.src = "./images/diferencial4G.png";
+        text.innerText = "Dedica profissionais para prospecção e análise de pontos que sejam pertinentes ao modelo de negócios.";
+    }
+}
+
