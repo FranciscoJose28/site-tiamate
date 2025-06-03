@@ -9,11 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" />
-    <style>
-        * {
-            font-family: "Archivo", sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -94,7 +90,7 @@
                 <p class="mb-4 text-marrom">Com um modelo de negocio sólido e rentavel, a Tiamate se destaca entre
                     as melhores oportunidades de franquia pelas 4 razões que seguem:</p>
                     <div class="w-[250px] m-auto my-8 lg:flex lg:w-auto lg:gap-4 lg:items-center">
-                        <img id="icon-quemsomos" src="images/icon-quemsomos1.png" class="block m-auto mb-4" alt="" >
+                        <img id="icon-quemsomos" src="images/icon-quemsomos1.png" class="block m-auto lg:m-0 mb-4" alt="" >
                         <p id="texto-quemsomos" class="mb-4 text-marrom text-center lg:text-left">Universidade corporativa que auxilia na capacitação operacional e desenvolvimento de habilidades gerenciais</p>
                     </div>
                     <div class="flex justify-center gap-[22px] lg:justify-start">
@@ -133,6 +129,9 @@
                     </div>
                     <img src="images/graos2.png" alt="" class="w-full">
                 </div>
+            </div>
+            <div class="hidden">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7WSX6jTi-wo?si=RqlSm_RkIg5ckHgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
         <section id="modelos" class="p-4 md:p-[60px] xl:px-[135px]">
@@ -236,23 +235,23 @@
                         <button class="text-marrom bg-canela w-full leading-[60px] inline-block rounded-md text-center font-semibold hover:bg-creme hover:text-vinho duration-200 mt-[37px]">Mais Informações</button>
                 </div>
             </div>
-            <div class="p-4 md:p-[60px] xl:px-[135px] xl:py-[250px] text-center lg:flex lg:gap-[100px] lg:text-left lg:items-start">
-                <div>
-                    <h2 class="text-bege font-bold leading-[54px] text-[36px] xl:text-[50px] xl:mb-[40px] mb-[19px]">Diferenciais da Tiamate</h2>
-                    <div class="flex flex-wrap justify-center gap-4 xl:justify-start">
-                        <img src="images/diferencial1.png" alt="" onclick="diferenciais('images/diferencial1-grande.png')">
-                        <img src="images/diferencial2.png" alt="" onclick="diferenciais('images/diferencial2G.png')">
-                        <img src="images/diferencial3.png" alt="" onclick="diferenciais('images/diferencial3G.png')">
-                        <img src="images/diferencial4.png" alt="" onclick="diferenciais('images/diferencial4G.png')">
-                        <img src="images/diferencial5.png" alt="" onclick="diferenciais('images/diferencial5G.png')">
-                        <img src="images/diferencial6.png" alt="" onclick="diferenciais('images/diferencial6G.png')">
+            <div class="p-4 md:p-[60px] xl:px-[135px] xl:py-[250px] text-center lg:flex xl:gap-[100px] lg:justify-between lg:gap-[60px] lg:text-left lg:items-center">
+                <div class="lg:w-[240px] xl:w-[360px]">
+                    <h2 class="text-bege font-bold leading-[36px] text-[32px] xl:leading-[54px] xl:text-[50px] xl:mb-[40px] mb-[19px]">Diferenciais da Tiamate</h2>
+                    <div class="flex flex-wrap justify-center gap-4 lg:justify-start ">
+                        <img src="images/diferencial1.png" alt="" class="lg:w-[40px] xl:w-auto" onclick="diferenciais('images/diferencial1-grande.png',1)">
+                        <img src="images/diferencial2.png" alt="" class="lg:w-[40px] xl:w-auto" onclick="diferenciais('images/diferencial2G.png',2)">
+                        <img src="images/diferencial3.png" alt="" class="lg:w-[40px] xl:w-auto" onclick="diferenciais('images/diferencial3G.png',3)">
+                        <img src="images/diferencial4.png" alt="" class="lg:w-[40px] xl:w-auto" onclick="diferenciais('images/diferencial4G.png',4)">
+                        <img src="images/diferencial5.png" alt="" class="lg:w-[40px] xl:w-auto" onclick="diferenciais('images/diferencial5G.png',5)">
+                        <img src="images/diferencial6.png" alt="" class="lg:w-[40px] xl:w-auto" onclick="diferenciais('images/diferencial6G.png',6)">
                     </div>
                 </div>
                 <div class="my-8 xl:my-0">
-                    <img id="iconMaior" src="images/diferencial1-grande.png" alt="" class="m-auto">
+                    <img id="iconMaior" src="images/diferencial1-grande.png" alt="" class="m-auto lg:w-[260px]">
                 </div>
-                <div>
-                    <h2 id="titulo-diferenciais" class="text-bege font-bold leading-[54px] text-[36px] xl:text-[50px] mb-[19px]">Media de Lucratividade</h2>
+                <div class="lg:flex-1">
+                    <h2 id="titulo-diferenciais" class="text-bege font-bold leading-[36px] text-[32px] xl:leading-[54px] xl:text-[50px] mb-[19px]">Media de Lucratividade</h2>
                     <p id="texto-diferenciais" class="text-marrom text-[18px]">A tiamate possui faturamento bruto percentual de lucro de 12% a 18%</p>
                 </div>
             </div>

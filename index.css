@@ -1,0 +1,6 @@
+* {
+  font-family: "Archivo", sans-serif;
+}
+::selection{
+    background-color: transparent;
+}
