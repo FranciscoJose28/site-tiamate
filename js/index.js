@@ -93,3 +93,48 @@ function diferenciais(iconGrande,opcao){
     }
 }
 
+function videoContainer() {
+    const videoContainer = document.querySelector("#playVideo");
+    const iframe = document.querySelector("#videoFrame");
+    const classHidden = videoContainer.classList.contains("invisible");
+
+    if (classHidden) {
+        videoContainer.classList.remove("invisible","opacity-0");
+        iframe.classList.remove("invisible","opacity-0");
+    } else {
+        videoContainer.classList.add("invisible","opacity-0");
+        iframe.classList.add("invisible","opacity-0");
+    }
+}
+
+function salvarLead(){
+    event.preventDefault();
+    const nomeValue = document.querySelector("#nome").value;
+    const emailValue = document.querySelector("#email").value;
+    const telefoneValue = document.querySelector("#telefone").value;
+    const estadoValue = document.querySelector("#estado").value;
+    const cidadeValue = document.querySelector("#cidade").value;
+    const midiaValue = document.querySelector("#midia").value;
+    let dados = {
+        nome: nomeValue,
+        email: emailValue,
+        telefone: telefoneValue,
+        estado: estadoValue,
+        cidade: cidadeValue,
+        midia: midiaValue
+    }
+    console.log(dados);
+}
+
+function salvarContato(){
+    event.preventDefault();
+    const nomeValue = document.querySelector("#nome").value;
+    const emailValue = document.querySelector("#email").value;
+    const mensagemValue = document.querySelector("#mensagem").value;
+    let dados = {
+        nome: nomeValue,
+        email: emailValue,
+        mensagem: mensagemValue,
+    }
+    window.location.href = `https://wa.me/5585997750528?text=Contato%0ANome%3A${dados.nome}%20%2C%0AEmail%3A${dados.email}%20%2C%0AMensagem%3A${dados.mensagem}`
+}

@@ -102,10 +102,10 @@
                 <img src="images/copo-tiamate.png" alt="" class="w-full block">
             </div>
         </section>
-        <section id="video " class="bg-creme">
+        <section id="video" class="bg-creme">
             <div class="relative h-[300px] xl:h-auto">
                 <img src="images/vio-franquia.png" alt="" class="w-full h-full object-cover" />
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer group">
+                <div id="playBtn" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer group" onclick="videoContainer()">
                     <img src="images/icon-play.png" alt="" class="group-hover:scale-105 duration-200 w-[80px] xl:w-auto m-auto" />
                     <h6 class="text-[18px] text-creme mt-[22px] text-center">
                         Assistir vídeo
@@ -130,9 +130,13 @@
                     <img src="images/graos2.png" alt="" class="w-full">
                 </div>
             </div>
-            <div class="hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7WSX6jTi-wo?si=RqlSm_RkIg5ckHgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="playVideo" class="opacity-0 invisible duration-200 fixed w-full h-screen top-0 left-0 z-10 flex justify-center items-center">
+                <div class="fixed top-0 left-0 bg-black/80 w-full h-screen" onclick="videoContainer()"></div>
+                <iframe id="videoFrame" class="opacity-0 invisible delay-300 z-10" width="560" height="315" src="https://www.youtube.com/embed/7WSX6jTi-wo?si=RqlSm_RkIg5ckHgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <box-icon id="videoFechar" name='x' class="absolute top-8 right-8 fill-white cursor-pointer"
+                    onclick="videoContainer()"></box-icon>
             </div>
+
         </section>
         <section id="modelos" class="p-4 md:p-[60px] xl:px-[135px]">
             <div class="lg:flex lg:gap-[60px] items-center xl:gap-0 xl:justify-between">

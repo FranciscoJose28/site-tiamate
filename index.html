@@ -216,12 +216,12 @@
                     mais rápido possível.
                 </h6>
 
-                <form action="">
+                <form onsubmit="salvarLead()">
                     <div class="flex w-full bg-creme rounded-md h-[60px] gap-[10px] items-center pl-[10px] mb-[10px]">
                         <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
                             <img src="images/icon-user.png" alt="" />
                         </div>
-                        <input type="text" placeholder="Nome e Sobrenome"
+                        <input id="nome" type="text" placeholder="Nome e Sobrenome"
                             class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none" />
                     </div>
 
@@ -229,7 +229,7 @@
                         <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
                             <img src="images/icon-email.png" alt="" />
                         </div>
-                        <input type="email" placeholder="email@exemplo.com"
+                        <input id="email" type="email" placeholder="email@exemplo.com"
                             class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none" />
                     </div>
 
@@ -237,7 +237,7 @@
                         <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
                             <img src="images/icon-phone.png" alt="" />
                         </div>
-                        <input type="text" placeholder="Telefone com DDD"
+                        <input id="telefone" type="text" placeholder="Telefone com DDD"
                             class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none" />
                     </div>
 
@@ -247,7 +247,7 @@
                             <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
                                 <img src="images/icon-pin.png" alt="" />
                             </div>
-                            <select class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
+                            <select id="estado" class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
                                 <option>UF</option>
                                 <option>CE</option>
                                 <option>SP</option>
@@ -261,7 +261,7 @@
                             <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
                                 <img src="images/icon-home.png" alt="" />
                             </div>
-                            <select class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
+                            <select id="cidade" class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
                                 <option>Cidade</option>
                                 <option>CE</option>
                                 <option>SP</option>
@@ -275,7 +275,7 @@
                         <div class="w-[32px] h-[32px] flex justify-center items-center rounded-full bg-canela">
                             <img src="images/icon-home.png" alt="" />
                         </div>
-                        <select class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
+                        <select id="midia" class="bg-transparent flex-1 h-[60px] placeholder:text-marrom focus:outline-none">
                             <option>Como conheceu a Tiamate?</option>
                             <option>Redes Sociais</option>
                             <option>Indicação</option>
@@ -283,6 +283,7 @@
                         </select>
                     </div>
                     <button
+                        type="submit"
                         class="text-marrom bg-canela w-full leading-[60px] inline-block rounded-md text-center font-semibold hover:bg-creme hover:text-vinho duration-200">Enviar
                         Cadastro</button>
                 </form>
