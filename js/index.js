@@ -138,3 +138,49 @@ function salvarContato(){
     }
     window.location.href = `https://wa.me/5585997750528?text=Contato%0ANome%3A${dados.nome}%20%2C%0AEmail%3A${dados.email}%20%2C%0AMensagem%3A${dados.mensagem}`
 }
+
+function galeria(){
+    let imagens = document.querySelectorAll(".img-galeria"); //selecionar todos os items que tiverem esta classe
+    let quantidade = imagens.length;
+    let larguraImagemPequena = 0;
+    let espacamento = 16;
+    let larguraDaGaleria = 0;
+    let larguraDaTela = window.innerWidth;
+
+    if(larguraDaTela <= 450){
+        larguraImagemPequena = 150;
+    }else if(larguraDaTela <= 768){
+        larguraImagemPequena = 168;
+    }else{
+        larguraImagemPequena = 214;
+        espacamento = 24
+    }
+    
+    larguraDaGaleria = (quantidade * larguraImagemPequena) + ((quantidade - 1) * espacamento)
+    let divGaleria = document.querySelector("#galeria");
+    divGaleria.style.width = larguraDaGaleria+"px";
+}
+
+let nextCount = 1;
+function galeriaNext(){
+    let imagens = document.querySelectorAll(".img-galeria");
+    let quantidade = imagens.length;
+    let divGaleria = document.querySelector("#galeria");
+    let larguraImagemPequena = 0;
+    let espacamento = 16;
+    let larguraDaTela = window.innerWidth;
+
+    if(larguraDaTela <= 450){
+        larguraImagemPequena = 150;
+    }else if(larguraDaTela <= 768){
+        larguraImagemPequena = 168;
+    }else{
+        larguraImagemPequena = 214;
+        espacamento = 24
+    }
+    divGaleria.style.left = `-${(larguraImagemPequena + (espacamento/2)) * nextCount}px`
+    nextCount += 1;
+    if(nextCount > quantidade){
+        nextCount = 1;
+    }
+}
