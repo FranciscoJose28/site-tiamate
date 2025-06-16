@@ -57,7 +57,6 @@ function quemSomos(direcao) {
         icon.src = "./images/icon-quemsomos4.png";
         text.innerText = "Equipe de consultores altamente especializada";
     }
-    // console.log(opcao);
 }
 
 function diferenciais(iconGrande,opcao){
@@ -161,7 +160,7 @@ function galeria(){
     divGaleria.style.width = larguraDaGaleria+"px";
 }
 
-let nextCount = 1;
+let globalCount = 0;
 function galeriaNext(){
     let imagens = document.querySelectorAll(".img-galeria");
     let quantidade = imagens.length;
@@ -178,9 +177,37 @@ function galeriaNext(){
         larguraImagemPequena = 214;
         espacamento = 24
     }
-    divGaleria.style.left = `-${(larguraImagemPequena + (espacamento/2)) * nextCount}px`
-    nextCount += 1;
-    if(nextCount > quantidade){
-        nextCount = 1;
+    globalCount++;
+    divGaleria.style.left = `-${(larguraImagemPequena + (espacamento/2)) * globalCount}px`
+    if (globalCount > quantidade - 5) {
+        globalCount = 0;
+        divGaleria.style.left = `0px`
+    }
+}
+
+function galeriaPrevious(){
+    let imagens = document.querySelectorAll(".img-galeria");
+    let quantidade = imagens.length;
+    let divGaleria = document.querySelector("#galeria");
+    let larguraImagemPequena = 0;
+    let espacamento = 16;
+    let larguraDaTela = window.innerWidth;
+
+    if(larguraDaTela <= 450){
+        larguraImagemPequena = 150;
+    }else if(larguraDaTela <= 768){
+        larguraImagemPequena = 168;
+    }else{
+        larguraImagemPequena = 214;
+        espacamento = 24
+    }
+    globalCount--;
+    if(globalCount > 0) {
+        divGaleria.style.left = `-${(larguraImagemPequena + (espacamento/2)) * globalCount}px`
+    }
+
+    if (globalCount < 0) {
+        globalCount = quantidade - 5;
+        divGaleria.style.left = `-${(larguraImagemPequena + (espacamento/2)) * globalCount}px`
     }
 }

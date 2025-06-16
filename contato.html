@@ -96,12 +96,14 @@
           <img src="images/icon-instagram.svg" alt="" />
         </div>
       </div>
-      <div class="overflow-x-auto lg:overflow-hidden">
-        <button id="previous" class="absolute text-[30px] left-0 px-2 text-black">←</button>
-        <button onclick="galeriaNext()" class="absolute text-[30px] right-0 px-2 text-black">→</button>
+      <div class="overflow-x-auto lg:overflow-hidden relative">
+        <div class="hidden lg:flex justify-between absolute top-1/2 -translate-y-1/2 z-10 w-full">
+          <box-icon onclick="galeriaPrevious()" type='solid' name='left-arrow-circle' class="w-[30px] h-[30px] fill-marrom hover:fill-bege duration-200 cursor-pointer"></box-icon>
+          <box-icon onclick="galeriaNext()" type='solid' name='right-arrow-circle' class="w-[30px] h-[30px] fill-marrom hover:fill-bege duration-200 cursor-pointer"></box-icon>
+        </div>
         <div
           id="galeria"
-          class="flex justify-between relative left-0 *:w-[150px] lg:gap-4 xl:gap-[24px] *:lg:w-[168px] *:xl:w-[214px] duration-200 bg-black">
+          class="flex justify-between relative left-0 *:w-[150px] lg:gap-4 xl:gap-[24px] *:lg:w-[168px] *:xl:w-[214px] duration-200 ">
           <img src="images/galeria1.png" alt="" class="img-galeria" />
           <img src="images/galeria1.png" alt="" class="img-galeria" />
           <img src="images/galeria1.png" alt="" class="img-galeria" />
@@ -113,13 +115,6 @@
           <img src="images/galeria5.png" alt="" class="img-galeria" />
           <img src="images/galeria5.png" alt="" class="img-galeria" />
         </div>
-      </div>
-      <div class="lg:flex lg:justify-center lg:gap-[11px] lg:mt-[58px]">
-        <div class="lg:h-[12px] lg:w-[12px] lg:rounded-full lg:bg-black"></div>
-        <div class="lg:h-[11px] lg:w-[11px] lg:rounded-full lg:bg-cinzaescuro"></div>
-        <div class="lg:h-[11px] lg:w-[11px] lg:rounded-full lg:bg-cinzaescuro"></div>
-        <div class="lg:h-[11px] lg:w-[11px] lg:rounded-full lg:bg-cinzaescuro"></div>
-        <div class="lg:h-[11px] lg:w-[11px] lg:rounded-full lg:bg-cinzaescuro"></div>
       </div>
     </section>
     <section id="endereco" class="p-4 lg:p-[60px] xl:px-[135px]">
@@ -329,4 +324,4 @@
   </script>
 </body>
 
-</html>
+</html> 
