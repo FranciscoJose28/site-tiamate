@@ -211,3 +211,24 @@ function galeriaPrevious(){
         divGaleria.style.left = `-${(larguraImagemPequena + (espacamento/2)) * globalCount}px`
     }
 }
+
+function mudarCategoria(){
+    let liCategorias = document.querySelectorAll("#categorias li");
+    let divsAbas = document.querySelectorAll("#abas > div");
+
+    for(let i = 0; i < liCategorias.length; i++){
+        liCategorias[i].removeAttribute("class");
+    }
+
+    event.target.classList.add("!text-canela", "border-b-2", "border-b-canela", "leading-[30px]", "px-3", "lg:!text-[24px]", "lg:font-bold", "lg:leading-[40px]");
+
+    for(let i = 0; i < divsAbas.length; i++){
+        divsAbas[i].classList.remove("grid");
+        divsAbas[i].classList.add("hidden");
+        if(divsAbas[i].attributes[1].value == event.target.attributes[1].value){
+            divsAbas[i].classList.remove("hidden");
+            divsAbas[i].classList.add("grid");
+        }
+    }
+    
+}
