@@ -87,7 +87,7 @@
             class="p-4 md:p-[60px] lg:flex lg:gap-[60px] lg:items-start xl:gap-[130px] xl:px-[135px]">
             <div class="overflow-x-auto lg:w-[300px]">
                 <ul id="categorias"
-                    class="flex w-[800px] gap-[20px] lg:w-auto lg:flex-col lg:*:text-[18px] *:text-marrom">
+                    class="flex w-[800px] gap-[20px] lg:w-auto lg:flex-col lg:*:text-[18px] *:text-marrom cursor-pointer">
                     <li onclick="mudarCategoria()" aba="1" class="!text-canela border-b-2 border-b-canela leading-[30px] px-3 lg:!text-[24px] lg:font-bold lg:leading-[40px]">Lançamentos</li>
                     <li onclick="mudarCategoria()" aba="2">Expressos</li>
                     <li onclick="mudarCategoria()" aba="3">Tiamatino Coffee</li>
@@ -98,6 +98,12 @@
             </div>
             <div id="abas">
                 <div class="grid grid-cols-2 md:grid-cols-3 text-center text-marrom" aba="1">
+                    <div class="items-center">
+                        <img src="images/lançamento.png" alt="">
+                        <h6>Merry Berry</h6>
+                    </div>
+                </div>
+                <div class="hidden grid-cols-2 md:grid-cols-3 text-center text-marrom" aba="2">
                     <div class="grid items-center justify-between">
                         <img src="images/expresso1.png" alt="">
                         <h6>Tradicional</h6>
@@ -119,21 +125,103 @@
                         <h6>Latte</h6>
                     </div>
                 </div>
-                <div class="hidden grid-cols-2 md:grid-cols-3 text-center text-marrom" aba="2">
-                    ABA 2
-                </div>
+
                 <div class="hidden grid-cols-2 md:grid-cols-3 text-center text-marrom" aba="3">
-                    ABA 3
+                    <div class="grid items-center justify-between">
+                        <img src="images/tiamatinoCoffe1.png" alt="">
+                        <h6>Tiamatino coffee <br> brigadeiro</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/tiamatinoCoffe2.png" alt="">
+                        <h6>Tiamatino coffee <br> cookie</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/tiamatinoCoffe3.png" alt="">
+                        <h6>Tiamatino coffee <br> caramelo</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/tiamatinoCoffe4.png" alt="">
+                        <h6>Tiamatino coffee <br> tradicional</h6>
+                    </div>
                 </div>
+
                 <div class="hidden grid-cols-2 md:grid-cols-3 text-center text-marrom" aba="4">
-                    ABA 4
+                    <div class="grid items-center justify-between">
+                        <img src="images/tiamatinoCream1.png" alt="">
+                        <h6>Morango</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/tiamatinoCream2.png" alt="">
+                        <h6>Baunilha</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/tiamatinoCream3.png" alt="">
+                        <h6>Chocolate</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/tiamatinoCream4.png" alt="">
+                        <h6>Churros</h6>
+                    </div>
                 </div>
+
                 <div class="hidden grid-cols-2 md:grid-cols-3 text-center text-marrom" aba="5">
-                    ABA 5
+                    <div class="grid items-center justify-between">
+                        <img src="images/bebidasItalianas1.png" alt="">
+                        <h6>Strawberry Soda</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/bebidasItalianas2.png" alt="">
+                        <h6>Ponkan Tangerine Soda</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/bebidasItalianas3.png" alt="">
+                        <h6>Green Apple Soda</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/bebidasItalianas4.png" alt="">
+                        <h6>Peach Soda</h6>
+                    </div>
                 </div>
+
                 <div class="hidden grid-cols-2 md:grid-cols-3 text-center text-marrom" aba="6">
-                    ABA 6
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino1.png" alt="">
+                        <h6>Tradicional</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino2.png" alt="">
+                        <h6>Baunilha</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino3.png" alt="">
+                        <h6>Chocolate com <br> Canela</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino4.png" alt="">
+                        <h6>Avelã</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino5.png" alt="">
+                        <h6>Mocha</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino6.png" alt="">
+                        <h6>Chocolate <br> Clássico Cremoso</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino7.png" alt="">
+                        <h6>Latte tea</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino8.png" alt="">
+                        <h6>Choco Tea</h6>
+                    </div>
+                    <div class="grid items-center justify-between">
+                        <img src="images/cappuccino9.png" alt="">
+                        <h6>Caramelo Tiamate</h6>
+                    </div>
                 </div>
+
             </div>
         </section>
         <section id="franquia" class="bg-marrom flex flex-col-reverse lg:flex-row">

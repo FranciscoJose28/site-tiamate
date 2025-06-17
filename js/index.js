@@ -220,7 +220,7 @@ function mudarCategoria(){
         liCategorias[i].removeAttribute("class");
     }
 
-    event.target.classList.add("!text-canela", "border-b-2", "border-b-canela", "leading-[30px]", "px-3", "lg:!text-[24px]", "lg:font-bold", "lg:leading-[40px]");
+    event.target.classList.add("!text-canela", "border-b-2", "border-b-canela", "leading-[30px]", "px-3", "lg:!text-[24px]", "lg:font-bold", "lg:leading-[40px]", "duration-200");
 
     for(let i = 0; i < divsAbas.length; i++){
         divsAbas[i].classList.remove("grid");
