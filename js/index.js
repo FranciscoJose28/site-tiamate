@@ -232,3 +232,41 @@ function mudarCategoria(){
     }
     
 }
+
+function cardapioCarrossel(){
+    const container = document.querySelector("#cardapio-itens");
+    const itens = document.querySelectorAll("#cardapio-itens img").length;
+    container.style.width = `${itens * 300}px`;
+    
+}
+
+function cardapioCarrosselProximo(){
+    const container = document.querySelector("#cardapio-itens");
+    const itens = document.querySelectorAll("#cardapio-itens img").length;
+    let visible = 1;
+    let larguraDaTela = window.innerWidth;
+
+    if(larguraDaTela <= 450){
+        visible = 1;
+    }else if(larguraDaTela <= 768){
+        visible = 2;
+    }else{
+        visible = 3;
+    }
+    let active = Number(container.getAttribute("active"));
+    if(active < (itens - visible)){
+        active += 1;
+        container.setAttribute("active", active);
+        container.style.left = `-${300 * active}px`;
+    }
+}
+
+function cardapioCarrosselAnterior(){
+    const container = document.querySelector("#cardapio-itens");
+    let active = Number(container.getAttribute("active"));
+    if(active > 0){
+        active -= 1;
+        container.setAttribute("active", active);
+        container.style.left = `-${300 * active}px`;
+    }
+}
